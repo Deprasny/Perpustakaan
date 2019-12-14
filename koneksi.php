@@ -1,13 +1,9 @@
-<?php
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello Word</title>
-</head>
-<body>
-    <p>Hello Word</p>
-</body>
-</html>
+<?php 
+$koneksi = mysqli_connect("localhost","root","","perpustakaan");
+ 
+// Check connection
+if (mysqli_connect_errno()){
+	echo "Koneksi database gagal : " . mysqli_connect_error();
+}
+ 
+?>
