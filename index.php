@@ -11,36 +11,13 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-blue">
-		<a class="navbar-brand" href="#">PerpusKu.com</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Daftar Buku</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">genre Buku</a>
-				</li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Cari" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Go!</button>
-			</form>
-		</div>
-	</nav>
 	<div>
-		<h2 class="text-center">CRUD BUKU PERPUSTAKAAN</h2>
+		<h2 class="text-center mt-3">CRUD BUKU PERPUSTAKAAN</h2>
 		<br />
 		<br />
-		<div class="table-responsive">
-			<table class="table table-striped pr-2 pl-2">
+		<div class="container table-responsive align-center">
+			<table class="table table-striped">
 				<tr>
 					<th>NO</th>
 					<th>Nama</th>
@@ -48,12 +25,12 @@
 					<th>Penerbit</th>
 					<th>OPSI</th>
 				</tr>
+
 				<?php
 				include 'koneksi.php';
 				$no = 1;
 				$data = mysqli_query($koneksi, "select * from buku");
 				while ($d = mysqli_fetch_array($data)) : ?>
-					?>
 					<tr>
 						<td><?php echo $no++; ?></td>
 						<td><?php echo $d['nama']; ?></td>
@@ -65,8 +42,8 @@
 						</td>
 					</tr>
 				<? endwhile; ?>
-				<a href="tambah.php">TAMBAH MAHASISWA</a>
 			</table>
+			<a href="tambah.php" class="btn btn-primary">TAMBAH MAHASISWA</a>
 		</div>
 	</div>
 
