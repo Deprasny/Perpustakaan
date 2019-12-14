@@ -37,8 +37,8 @@
 						<td><?php echo $d['pengarang']; ?></td>
 						<td><?php echo $d['penerbit']; ?></td>
 						<td>
-							<a href="edit.php" class="btn btn-warning btn-sm">EDIT</a> |
-							<a href="" class="btn btn-danger btn-sm">HAPUS</a>
+							<a href="edit.php?id=<?php echo $d['id_buku']; ?>" class="btn btn-warning btn-sm">EDIT</a> |
+							<a href="hapus.php?id=<?php echo $d['id_buku']; ?>" class="btn btn-danger btn-sm">HAPUS</a>
 						</td>
 					</tr>
 				<?php endwhile; ?>
