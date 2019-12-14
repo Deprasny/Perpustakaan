@@ -41,9 +41,9 @@
 							<a href="" class="btn btn-danger btn-sm">HAPUS</a>
 						</td>
 					</tr>
-				<? endwhile; ?>
+				<?php endwhile; ?>
 			</table>
-			<a href="tambah.php" class="btn btn-primary">TAMBAH MAHASISWA</a>
+			<a href="tambah.php" class="btn btn-primary">TAMBAH BUKU</a>
 		</div>
 	</div>
 
