@@ -13,27 +13,28 @@
 
 <body>
     <h1 class="text-center mt-3">Tambah data Buku</h1>
-
+    <form method="post" action="tambah_aksi.php">
     <div class="container">
         <form action="post">
             <div class="form-group">
                 <label for="exampleInputEmail1">Nama Buku</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan nama Buku">
+                <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukan nama Buku">
 
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Nama Pengarang</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan Nama Pengarang">
+                <input type="text" name="pengarang" class="form-control" id="exampleInputPassword1" placeholder="Masukan Nama Pengarang">
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Penerbit</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukan Nama Penerbit">
+                <input type="text" name="penerbit" class="form-control" id="exampleInputPassword1" placeholder="Masukan Nama Penerbit">
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
             <a href="index.php" class="btn btn-danger">Kembali</a>
         </form>
     </div>
+    </form>
 </body>
 
 </html>
